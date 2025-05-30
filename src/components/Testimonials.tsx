@@ -32,10 +32,10 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <section className="py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-indigo-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-6">
             What Our Students Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -47,7 +47,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
-              className="hover:shadow-lg transition-shadow duration-300 animate-fade-in"
+              className="hover:shadow-xl transition-all duration-300 animate-fade-in hover:scale-105 bg-gradient-to-br from-white to-purple-50"
             >
               <CardContent className="p-6">
                 <div className="flex flex-col items-center mb-4">
@@ -55,7 +55,7 @@ const Testimonials = () => {
                     <AvatarImage src={testimonial.image} alt={testimonial.name} />
                     <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                   </Avatar>
-                  <Quote className="h-8 w-8 text-blue-400" />
+                  <Quote className="h-8 w-8 text-purple-400" />
                 </div>
                 
                 <p className="text-gray-700 leading-relaxed mb-4 text-center">
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 
                 <div className="text-center">
                   <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-600">{testimonial.grade}</p>
+                  <p className="text-sm text-purple-600">{testimonial.grade}</p>
                 </div>
               </CardContent>
             </Card>

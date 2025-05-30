@@ -26,33 +26,33 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-blue-50">
+    <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
             <img 
               src="/lovable-uploads/fef2264d-a59e-4c55-afff-6ca68647ba16.png" 
-              alt="Prof. Arush Mehta" 
+              alt="Mirai Classes" 
               className="w-32 h-32 rounded-full object-cover shadow-lg"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
-              About Prof. Arush Mehta
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              About Mirai Classes
             </h2>
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            With over 15 years of teaching experience, Prof. Arush Mehta has established himself 
+            With over 15 years of teaching experience, Mirai Classes has established itself 
             as one of Pune's most trusted educators for 11th and 12th grade students.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-fade-in">
-            <h3 className="text-3xl font-semibold text-gray-800 mb-6">
+            <h3 className="text-3xl font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6">
               Excellence Through Experience
             </h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Prof. Mehta believes in nurturing each student's potential through personalized 
-              attention and innovative teaching methodologies. His approach combines traditional 
+              Mirai Classes believes in nurturing each student's potential through personalized 
+              attention and innovative teaching methodologies. Our approach combines traditional 
               academic rigor with modern pedagogical techniques.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -65,9 +65,9 @@ const About = () => {
             {achievements.map((achievement, index) => (
               <div 
                 key={index}
-                className="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center animate-fade-in"
+                className="bg-gradient-to-br from-purple-100 to-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-center animate-fade-in hover:scale-105"
               >
-                <achievement.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <achievement.icon className="h-12 w-12 text-purple-600 mx-auto mb-4" />
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">
                   {achievement.title}
                 </h4>

@@ -16,7 +16,7 @@ const Courses = () => {
         "Doubt clearing sessions",
         "Study material provided"
       ],
-      price: "₹25,000/year"
+      price: "₹75,000/year"
     },
     {
       title: "12th Grade Science",
@@ -29,7 +29,7 @@ const Courses = () => {
         "Mock tests weekly",
         "Individual attention"
       ],
-      price: "₹30,000/year"
+      price: "₹90,000/year"
     },
     {
       title: "Crash Course",
@@ -42,15 +42,30 @@ const Courses = () => {
         "Previous year papers",
         "Quick doubt resolution"
       ],
-      price: "₹15,000/course"
+      price: "₹45,000/course"
     }
   ];
 
+  const getSubjectColor = (subject: string) => {
+    switch (subject) {
+      case "Physics":
+        return "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg";
+      case "Chemistry":
+        return "bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-lg";
+      case "Mathematics":
+        return "bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-lg";
+      case "All Science Subjects":
+        return "bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-lg";
+      default:
+        return "bg-gradient-to-r from-gray-500 to-gray-600 text-white shadow-lg";
+    }
+  };
+
   return (
-    <section className="py-20 bg-blue-50">
+    <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
             Our Courses
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -62,17 +77,17 @@ const Courses = () => {
           {courses.map((course, index) => (
             <Card 
               key={index}
-              className="hover:shadow-xl transition-shadow duration-300 border-2 hover:border-blue-200 animate-fade-in"
+              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-purple-200 animate-fade-in hover:scale-105 bg-gradient-to-br from-white to-purple-50"
             >
-              <CardHeader className="text-center bg-gradient-to-r from-blue-50 to-blue-100">
-                <CardTitle className="text-2xl font-bold text-blue-800 mb-2">
+              <CardHeader className="text-center bg-gradient-to-r from-purple-50 to-pink-50">
+                <CardTitle className="text-2xl font-bold bg-gradient-to-r from-purple-700 to-pink-700 bg-clip-text text-transparent mb-2">
                   {course.title}
                 </CardTitle>
                 <div className="flex flex-wrap justify-center gap-2 mb-4">
                   {course.subjects.map((subject, idx) => (
                     <span 
                       key={idx}
-                      className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+                      className={`px-4 py-2 rounded-full text-sm font-semibold transform hover:scale-105 transition-all duration-200 ${getSubjectColor(subject)}`}
                     >
                       {subject}
                     </span>
@@ -83,18 +98,18 @@ const Courses = () => {
               <CardContent className="p-6">
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center gap-3">
-                    <Clock className="h-5 w-5 text-blue-600" />
+                    <Clock className="h-5 w-5 text-purple-600" />
                     <span className="text-gray-700">{course.duration}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Users className="h-5 w-5 text-blue-600" />
+                    <Users className="h-5 w-5 text-purple-600" />
                     <span className="text-gray-700">{course.batchSize}</span>
                   </div>
                 </div>
                 
                 <div className="mb-6">
                   <h4 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                    <BookOpen className="h-5 w-5" />
+                    <BookOpen className="h-5 w-5 text-purple-600" />
                     Course Features
                   </h4>
                   <ul className="space-y-2">
@@ -108,10 +123,10 @@ const Courses = () => {
                 </div>
                 
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 mb-4">
+                  <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
                     {course.price}
                   </div>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg">
                     Enroll Now
                   </Button>
                 </div>
