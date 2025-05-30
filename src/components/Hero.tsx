@@ -27,7 +27,7 @@ const Hero = () => {
             <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 text-lg">
               Enroll Now
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-lg">
+            <Button variant="outline" size="lg" className="border-white text-yellow-400 hover:bg-white hover:text-blue-900 px-8 py-4 text-lg">
               Learn More
             </Button>
           </div>
@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5 text-yellow-400" />
-              <span>+91 98765 43210</span>
+              <span>+91 99999 99999</span>
             </div>
           </div>
         </div>

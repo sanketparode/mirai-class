@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -58,7 +58,7 @@ const About = () => {
             {achievements.map((achievement, index) => (
               <div 
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center animate-fade-in"
+                className="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center animate-fade-in"
               >
                 <achievement.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">

@@ -7,7 +7,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -46,8 +46,8 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700">+91 98765 43210</p>
-                  <p className="text-gray-700">+91 87654 32109</p>
+                  <p className="text-gray-700">+91 99999 99999</p>
+                  <p className="text-gray-700">+91 99999 99999</p>
                 </CardContent>
               </Card>
               
