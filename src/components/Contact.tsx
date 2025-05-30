@@ -60,8 +60,6 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <a href="mailto:info@arushmehta.edu" className="text-gray-700 hover:text-blue-600 transition-colors">info@arushmehta.edu</a>
-                  <br />
-                  <a href="mailto:admissions@arushmehta.edu" className="text-gray-700 hover:text-blue-600 transition-colors">admissions@arushmehta.edu</a>
                 </CardContent>
               </Card>
             </div>

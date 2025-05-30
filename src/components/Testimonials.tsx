@@ -9,25 +9,25 @@ const Testimonials = () => {
       name: "Priya Sharma",
       grade: "12th Pass (2023)",
       text: "Prof. Mehta's teaching style is exceptional. His clear explanations and patient approach helped me score 95% in Physics. Thank you for believing in me!",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/485b7e6c-9d35-49ce-9050-dfb080137f8b.png"
     },
     {
       name: "Rohit Patel",
       grade: "11th Student",
       text: "The foundation I built in 11th grade with Prof. Mehta is helping me excel in 12th. His practice sessions and doubt clearing are amazing.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/012fd05a-06d5-43a9-afe3-748711c14397.png"
     },
     {
       name: "Ananya Joshi",
       grade: "12th Pass (2023)",
       text: "Best decision was joining Prof. Mehta's classes. Not only did I improve my grades, but I also developed a genuine interest in Chemistry.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/7bdb2a70-70f1-44ae-a341-b853f447ec57.png"
     },
     {
       name: "Arjun Kulkarni",
       grade: "Parent",
       text: "My son's confidence and performance improved dramatically under Prof. Mehta's guidance. Highly recommend for all Science students.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/c21e8f66-3853-45b2-b767-9fcb6456e875.png"
     }
   ];
 

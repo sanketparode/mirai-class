@@ -31,7 +31,7 @@ const About = () => {
         <div className="text-center mb-16">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
             <img 
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=200&fit=crop&crop=face" 
+              src="/lovable-uploads/fef2264d-a59e-4c55-afff-6ca68647ba16.png" 
               alt="Prof. Arush Mehta" 
               className="w-32 h-32 rounded-full object-cover shadow-lg"
             />
