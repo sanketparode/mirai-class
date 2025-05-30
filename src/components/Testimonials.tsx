@@ -1,6 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Testimonials = () => {
   const testimonials = [
@@ -8,25 +9,25 @@ const Testimonials = () => {
       name: "Priya Sharma",
       grade: "12th Pass (2023)",
       text: "Prof. Mehta's teaching style is exceptional. His clear explanations and patient approach helped me score 95% in Physics. Thank you for believing in me!",
-      rating: 5
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Rohit Patel",
       grade: "11th Student",
       text: "The foundation I built in 11th grade with Prof. Mehta is helping me excel in 12th. His practice sessions and doubt clearing are amazing.",
-      rating: 5
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Ananya Joshi",
       grade: "12th Pass (2023)",
       text: "Best decision was joining Prof. Mehta's classes. Not only did I improve my grades, but I also developed a genuine interest in Chemistry.",
-      rating: 5
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Arjun Kulkarni",
       grade: "Parent",
       text: "My son's confidence and performance improved dramatically under Prof. Mehta's guidance. Highly recommend for all Science students.",
-      rating: 5
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
     }
   ];
 
@@ -49,20 +50,19 @@ const Testimonials = () => {
               className="hover:shadow-lg transition-shadow duration-300 animate-fade-in"
             >
               <CardContent className="p-6">
-                <div className="mb-4">
-                  <Quote className="h-8 w-8 text-blue-400 mb-3" />
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    "{testimonial.text}"
-                  </p>
+                <div className="flex flex-col items-center mb-4">
+                  <Avatar className="w-16 h-16 mb-3">
+                    <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                  <Quote className="h-8 w-8 text-blue-400" />
                 </div>
                 
-                <div className="flex items-center mb-3">
-                  {[...Array(testimonial.rating)].map((_, idx) => (
-                    <Star key={idx} className="h-4 w-4 text-yellow-400 fill-current" />
-                  ))}
-                </div>
+                <p className="text-gray-700 leading-relaxed mb-4 text-center">
+                  "{testimonial.text}"
+                </p>
                 
-                <div>
+                <div className="text-center">
                   <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
                   <p className="text-sm text-gray-600">{testimonial.grade}</p>
                 </div>

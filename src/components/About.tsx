@@ -29,9 +29,16 @@ const About = () => {
     <section className="py-20 bg-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            About Prof. Arush Mehta
-          </h2>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=200&fit=crop&crop=face" 
+              alt="Prof. Arush Mehta" 
+              className="w-32 h-32 rounded-full object-cover shadow-lg"
+            />
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
+              About Prof. Arush Mehta
+            </h2>
+          </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             With over 15 years of teaching experience, Prof. Arush Mehta has established himself 
             as one of Pune's most trusted educators for 11th and 12th grade students.

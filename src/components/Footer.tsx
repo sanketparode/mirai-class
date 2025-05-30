@@ -1,5 +1,5 @@
 
-import { GraduationCap, MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import { GraduationCap, MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -18,7 +18,6 @@ const Footer = () => {
             <div className="flex gap-4">
               <Facebook className="h-6 w-6 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
               <Instagram className="h-6 w-6 text-gray-400 hover:text-pink-400 cursor-pointer transition-colors" />
-              <Youtube className="h-6 w-6 text-gray-400 hover:text-red-400 cursor-pointer transition-colors" />
             </div>
           </div>
           
